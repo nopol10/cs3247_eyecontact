@@ -35,3 +35,20 @@ bool UEyeContactFunctions::SetMousePosition(const APlayerController* PlayerContr
 
 	return true;
 }
+
+float UEyeContactFunctions::GetRenderedMonsters(TArray<AMonsterPlayer*>& CurrentlyRenderedMonsters, float MinRecentTime, TArray<AMonsterPlayer*> Monsters)
+{
+	//Empty any previous entries
+	CurrentlyRenderedMonsters.Empty();
+	float LastRenderedTime = -1;
+	//Iterate Over Actors
+	for (int i = 0; i < Monsters.Num(); i++) //for (TObjectIterator<AMonsterPlayer> Itr; Itr; ++Itr)
+	{
+		if (Monsters[i]->GetLastRenderTime() > MinRecentTime )
+		{
+			LastRenderedTime = Monsters[i]->GetLastRenderTime();
+			CurrentlyRenderedMonsters.Add(Monsters[i]);
+		}
+	}
+	return LastRenderedTime > MinRecentTime ? LastRenderedTime : MinRecentTime;
+}
