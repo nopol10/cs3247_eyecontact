@@ -20,4 +20,6 @@ public:
 	static bool SetMousePosition(const APlayerController* PlayerController, const float PosX, const float PosY);
 	UFUNCTION(BlueprintCallable, Category = "EyeContactFunctions")
 	static float GetRenderedMonsters(TArray<AMonsterPlayer*>& CurrentlyRenderedMonsters, float MinRecentTime, TArray<AMonsterPlayer*> Monsters);
+	UFUNCTION(BlueprintCallable, Category = "EyeContactFunctions")
+	static bool IsInFrustum(AActor* Actor);
 };

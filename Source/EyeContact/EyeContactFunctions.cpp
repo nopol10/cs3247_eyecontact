@@ -52,3 +52,27 @@ float UEyeContactFunctions::GetRenderedMonsters(TArray<AMonsterPlayer*>& Current
 	}
 	return LastRenderedTime > MinRecentTime ? LastRenderedTime : MinRecentTime;
 }
+
+bool UEyeContactFunctions::IsInFrustum(AActor* Actor)
+{
+	ULocalPlayer* LocalPlayer = GWorld->GetFirstLocalPlayerFromController();
+	if (LocalPlayer != nullptr && LocalPlayer->ViewportClient != nullptr && LocalPlayer->ViewportClient->Viewport)
+	{
+		FSceneViewFamilyContext ViewFamily(FSceneViewFamily::ConstructionValues(
+			LocalPlayer->ViewportClient->Viewport,
+			GWorld->Scene,
+			LocalPlayer->ViewportClient->EngineShowFlags)
+			.SetRealtimeUpdate(true));
+
+		FVector ViewLocation;
+		FRotator ViewRotation;
+		FSceneView* SceneView = LocalPlayer->CalcSceneView(&ViewFamily, ViewLocation, ViewRotation, LocalPlayer->ViewportClient->Viewport);
+		if (SceneView != nullptr)
+		{
+			return SceneView->ViewFrustum.IntersectSphere(
+				Actor->GetActorLocation(), Actor->GetSimpleCollisionRadius());
+		}
+	}
+
+	return false;
+}
