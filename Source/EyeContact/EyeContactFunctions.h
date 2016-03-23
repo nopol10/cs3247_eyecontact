@@ -21,5 +21,5 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "EyeContactFunctions")
 	static float GetRenderedMonsters(TArray<AMonsterPlayer*>& CurrentlyRenderedMonsters, float MinRecentTime, TArray<AMonsterPlayer*> Monsters);
 	UFUNCTION(BlueprintCallable, Category = "EyeContactFunctions")
-	static bool IsInFrustum(AActor* Actor);
+	static bool IsInFrustum(APlayerController* srcPlayer, AActor* Actor);
 };
