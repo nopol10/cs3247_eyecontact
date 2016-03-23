@@ -73,6 +73,6 @@ bool UEyeContactFunctions::IsInFrustum(APlayerController* srcPlayer, AActor* Act
 				Actor->GetActorLocation(), Actor->GetSimpleCollisionRadius());
 		}
 	}
-
+	UE_LOG(LogTemp,Warning, TEXT("Local player or viewport null"));
 	return false;
 }
