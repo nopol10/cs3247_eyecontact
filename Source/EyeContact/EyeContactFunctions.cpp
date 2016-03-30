@@ -53,9 +53,9 @@ float UEyeContactFunctions::GetRenderedMonsters(TArray<AMonsterPlayer*>& Current
 	return LastRenderedTime > MinRecentTime ? LastRenderedTime : MinRecentTime;
 }
 
-bool UEyeContactFunctions::IsInFrustum(AActor* Actor)
+bool UEyeContactFunctions::IsInFrustum(APlayerController* srcPlayer, AActor* Actor)
 {
-	ULocalPlayer* LocalPlayer = GWorld->GetFirstLocalPlayerFromController();
+	ULocalPlayer* LocalPlayer = Cast<ULocalPlayer>(srcPlayer->Player);
 	if (LocalPlayer != nullptr && LocalPlayer->ViewportClient != nullptr && LocalPlayer->ViewportClient->Viewport)
 	{
 		FSceneViewFamilyContext ViewFamily(FSceneViewFamily::ConstructionValues(
@@ -73,6 +73,6 @@ bool UEyeContactFunctions::IsInFrustum(AActor* Actor)
 				Actor->GetActorLocation(), Actor->GetSimpleCollisionRadius());
 		}
 	}
-
+	UE_LOG(LogTemp,Warning, TEXT("Local player or viewport null"));
 	return false;
 }
