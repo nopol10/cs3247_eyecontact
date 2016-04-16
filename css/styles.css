@@ -47,3 +47,9 @@ td {
 .ability-title {
     color: crimson;
 }
+
+.alert-show {
+    position: fixed;
+    top: 0px;
+    z-index:9999;
+}
