@@ -15,10 +15,13 @@ td {
     padding: 5px;
 }
 
+.features-cell {
+    width: 100%;
+}
+
 .features {
     background-color: maroon;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     margin-bottom: 15px;
 }
 
@@ -37,7 +40,9 @@ td {
 .feature-list {
     padding: 8px;
     background-color: crimson;
-    width: 250%;
+
+    height: 100%;
+    width: 100%;
 }
 
 .player-box {
