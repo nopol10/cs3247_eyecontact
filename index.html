@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <div class="row col-sm-12">
         <div class="alert alert-success alert-dismissible alert-show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -22,14 +21,26 @@
         </div>
     </div>
 
+    <div id="header">
+        <img class="img img-responsive title-image" src="img/1-2.jpg" />
+    <div>
+
     <div class="container">
-        <div id="header">
-            <img class="img img-responsive" src="img/1-2.jpg" />
+        <div id="youtube-video">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/-p9DgRjV-nA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="header-titles"> Screenshots </h3>
+            </div>
         </div>
 
         <div id="screenshots" class="row">
             <div class="col-sm-2 col-xs-4">
-                <a href="img/0.jpg" class="fancybox" rel="gallery" title="Monsters roams the area">
+                <a href="img/0.jpg" class="fancybox screenshots" rel="gallery" title="Monsters roams the area">
                     <img class="img img-responsive" src="img/0.jpg" />
                 </a>
                 &nbsp
@@ -87,6 +98,15 @@
                         lurks within the museum. Now, they have to retrieve the sword and get out before they
                         are trapped there forever.
                     </span>
+
+                    <p>
+                        &nbsp
+                    </p>
+
+                    <p>
+                        This game is <b>open-source</b> and you can get the github project <a href="https://github.com/nopol10/cs3247_eyecontact">here</a>. <br />
+                        Follow the instructions <a href="instructions.html">here</a> on how to set and get it running.
+                    </p>
 
                     <p>
                         &nbsp
@@ -170,6 +190,10 @@
                         <div class="col-sm-8">
                             <h3> HUMAN </h3>
                             <hr>
+                            <h5>
+                                Human survivor have to grab the sword and get out of the place before the time runs out.
+                            </h5>
+                            <br />
 
                             <h4 class="ability-title"> Eye power </h4>
                             <p>
@@ -195,6 +219,11 @@
                             <h3> Monster </h3>
                             <hr>
 
+                            <h5>
+                                Kill all humans before they run away with the sword.
+                            </h5>
+                            <br />
+
                             <h4 class="ability-title"> Petrify </h4>
                             <p>
                                 <i>Turn human into stone upon contact</i>
@@ -216,32 +245,29 @@
             </div>
         </div>
 
-        <br>
+        <br />
 
-        <div id="improvements" class="row">
-            <div class="col-sm-12">
-                <h4 class="header-titles"> System requirements </h4>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <span class="ability-title">Minimum:</span> <br />
+        <div id="players">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="header-titles"> Controls </h4>
+                </div>
 
-                        <strong>OS:</strong> Windows 7/8 64-bit <br />
-                        <strong>Processor:</strong> Quad-core Intel or AMD, 2.5 GHz or greater <br />
-                        <strong>Memory:</strong> 8 GB <br />
-                        <strong>Storage:</strong> 3 GB available space <br />
-                        <strong>DirectX:</strong> Version 11 <br />
-                    </div>
-                    &nbsp
-                    <div class="col-sm-4">
-                        <span class="ability-title">Recommended:</span> <br />
-
-                        <strong>OS:</strong> Windows 7/8 64-bit or newer <br />
-                        <strong>Processor:</strong> Intel i5-4590 equivalent or greater <br />
-                        <strong>Memory:</strong> 8 GB or greater <br />
-                        <strong>Storage:</strong> 5 GB available space <br />
-                        <strong>Graphic card:</strong> NVIDIA GTX 970 / AMD R9 290 equivalent or greater <br />
-                        <strong>DirectX:</strong> Version 11 <br />
-                    </div>
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td class="control-table"> <b>WASD</b> </td>
+                            <td class="control-table"> Move </td>
+                        </tr>
+                        <tr>
+                            <td class="control-table"> <b>E</b> </td>
+                            <td class="control-table"> Interact with object </td>
+                        </tr>
+                        <tr>
+                            <td class="control-table"> <b>Right-click</b> </td>
+                            <td class="control-table"> Kill human(monster), <br /> Kill monster(Only when sword is picked up) </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -276,6 +302,97 @@
                 </ul>
             </div>
         </div>
+
+        <div id="system-requirements" class="row">
+            <div class="col-sm-12">
+                <h4 class="header-titles"> System requirements </h4>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="ability-title">Minimum:</span> <br />
+
+                        <strong>OS:</strong> Windows 7/8 64-bit <br />
+                        <strong>Processor:</strong> Quad-core Intel or AMD, 2.5 GHz or greater <br />
+                        <strong>Memory:</strong> 8 GB <br />
+                        <strong>Storage:</strong> 3 GB available space <br />
+                        <strong>DirectX:</strong> Version 11 <br />
+                    </div>
+                    &nbsp
+                    <div class="col-sm-4">
+                        <span class="ability-title">Recommended:</span> <br />
+
+                        <strong>OS:</strong> Windows 7/8 64-bit or newer <br />
+                        <strong>Processor:</strong> Intel i5-4590 equivalent or greater <br />
+                        <strong>Memory:</strong> 8 GB or greater <br />
+                        <strong>Storage:</strong> 5 GB available space <br />
+                        <strong>Graphic card:</strong> NVIDIA GTX 970 / AMD R9 290 equivalent or greater <br />
+                        <strong>DirectX:</strong> Version 11 <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="credits" class="row">
+            <div class="col-sm-12">
+                <h2 class="header-titles"> Credits </h2>
+
+                <div class="row col-sm-8">
+                    <p>
+                        This project was developed for <b>CS3247 Game Development</b> module at <i>National University of Singapore</i>,
+                        as part of the semester long group project using Unreal Engine. The theme for the semester was Virtual Reality.
+                    </p>
+                    <br />
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/ab.jpg" />
+                        <h4><strong> Prof. Anand Bhojan </strong></h4>
+                        <h5 class="text-center"> <i>Advisor</i> </h5>
+                    </div>
+                </div>
+
+                <h4 class="header-titles"> The team </h4>
+
+                <div class="row">
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/ah.jpg" />
+                        <h5><strong> Abdul Hadi </strong></h5>
+                    </div>
+
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/yx.jpg" />
+                        <h5><strong> Eu Yong Xue </strong></h5>
+                    </div>
+
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/jt.jpg" />
+                        <h5><strong> Jermyn Tanu </strong></h5>
+                    </div>
+
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/mh.jpg" />
+                        <h5><strong> Muhammad Hanif </strong></h5>
+                    </div>
+
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/yl.jpg" />
+                        <h5><strong> Tan Yan Ling </strong></h5>
+                    </div>
+
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/vt.jpg" />
+                        <h5><strong> Victor Tan </strong></h5>
+                    </div>
+
+                    <div class="col-sm-3 text-center">
+                        <img class="img img-circle credit-image" src="img/credits/wc.jpg" />
+                        <h5><strong> Wilson Choo </strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
 
         <footer>
             <div class="text-center">

@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Eye Contact</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" async>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" async>
+</head>
+
+<body>
+    <div id="header">
+        <img class="img img-responsive title-image" src="img/1-2.jpg" />
+    <div>
+
+    <div class="container">
+        <div id="title" class="row">
+
+            <div class="col-sm-12">
+                <h2 class="header-titles"> Setting up </h2>
+                <p>
+                    These instructions are for getting Eye Contact project up and running on your laptop/desktop.
+                </p>
+            </div>
+        </div>
+
+        <br />
+
+        <div id="requirements">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h4 class="header-titles"> Requirements </h4>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <span class="ability-title">Software:</span> <br />
+
+                            <strong>Game Engine:</strong> Unreal Engine 10.2 or greater <br />
+                            <strong>IDE:</strong> Visual Studios 15(<i>Windows</i>) with C++ toolchain installed, xCode(<i>Mac</i>) <br />
+                            <strong>Memory:</strong> 8 GB <br />
+                            <strong>Storage:</strong> At least 3 GB available space <br />
+
+                        </div>
+                        &nbsp
+                        <div class="col-sm-5">
+                            <span class="ability-title">Hardware:</span> <br />
+
+                            <strong>VR headset:</strong> Occulus Rift (optional) <br />
+                        </div>
+                    </div>
+
+                    <br />
+                    <p>
+                        See the minimum required spec for running <b>Unreal Engine</b> and <b>Occulus Rift</b> for best user experience during development.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <div id="project">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="header-titles"> Getting the project </h4>
+                    <p>
+                        Please ensure that you have installed the necessary softwares before continuing.
+                    </p>
+                </div>
+
+                <div class="col-sm-8">
+                    <p>
+                        <ol>
+                            <li>
+                                Pull or download the project from github repository <a href="https://github.com/nopol10/cs3247_eyecontact">here</a>.
+                            </li>
+
+                            <li>
+                                The main development branch will be master branch. <br />
+                                <b>Note: </b> For Mac users, as eye adaption is turned off in the project, the lighting in main level of the project will very dim.
+                                Due to this, merge all changes back to macBuild branch and develop it using that branch.
+                            </li>
+
+                            <li>
+                                Double click on 'EyeContact.uproject'. A popup might show up to ask to compile the project. Select 'Yes'.
+                            </li>
+
+                            <li>
+                                After the project has successfully compiled, Unreal Engine editor will launch. There you go, you are ready to contribute to the project!
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="packaging">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="header-titles"> Deploying the project </h4>
+                    <p>
+                        Please ensure that you have installed the necessary softwares before continuing.
+                    </p>
+                </div>
+
+                <div class="col-sm-8">
+                    <p>
+                        <ol>
+                            <li>
+                                Select 'File' -> 'Package'. Choose your deployment target and the build location folder of your choice.
+                            </li>
+
+                            <li>
+                                This will package the project for respective deployment platform you have chosen. This will take a quite while.
+                            </li>
+
+                            <li>
+                                Once complete, you may run the program.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="packaging">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="header-titles"> Running the game </h4>
+                </div>
+
+                <div class="col-sm-8">
+                    <p>
+                        <ol>
+                            <li>
+                                The project can only be run over local network. Select a player to host and get the computer IP address.
+                            </li>
+
+                            <li>
+                                Connecting player will have to open the console command in the game. Press '`' to access it.
+                            </li>
+
+                            <li>
+                                Type 'open <host-ip-address>' where host-ip-address is the IP address of the host computer.
+                            </li>
+
+                            <li>
+                                Upon successful connection, the host game will appear in the lobby and you can join.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div id="improvements" class="row">
+            <div class="col-sm-12">
+                <h4 class="header-titles"> Problems? </h4>
+
+                <p>
+                    Having problem developing or running the project? Feel free to raise issues in the <a href="https://github.com/nopol10/cs3247_eyecontact">github repository</a>.
+                </p>
+            </div>
+        </div>
+
+        <br />
+
+        <footer>
+            <div class="text-center">
+                <i>This project is part of CS3247 module @ NUS.</i>
+            </div>
+        </footer>
+</body>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="js/main.js"></script>
+
+</html>
