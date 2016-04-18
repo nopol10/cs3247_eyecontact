@@ -1,11 +1,13 @@
 body {
     background-color: black;
     color: white;
+    height: 100%;
 }
 
 td {
     padding-top: .1em;
     padding-bottom: .1em;
+    height: 100%;
 }
 
 a {
@@ -81,6 +83,28 @@ a:hover {
 
 .control-table {
     padding-left: 15px;
+    width: 100%;
+}
+
+.control-header {
+    color: red;
+    text-align: center;
+}
+
+.control-action-container {
+    width: 40%;
+}
+
+.control-action {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.control-keys {
+    background-color: red;
+    text-align: center;
+
+    padding: 10px;
 }
 
 .credit-image {

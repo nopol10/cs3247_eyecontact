@@ -8,7 +8,7 @@
     <title>Eye Contact</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" async>
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" / async>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" async>
 </head>
@@ -253,19 +253,132 @@
                     <h4 class="header-titles"> Controls </h4>
                 </div>
 
-                <div class="col-sm-8">
-                    <table>
+                <div class="col-md-6 col-sm-6">
+                    <table class="control-table">
                         <tr>
-                            <td class="control-table"> <b>WASD</b> </td>
-                            <td class="control-table"> Move </td>
+                            <td class="control-header" colspan="2">
+                                <h4>Human</h4>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="control-table"> <b>E</b> </td>
-                            <td class="control-table"> Interact with object </td>
+                            <td class="control-action-container">
+                                <div class="control-action">
+                                    Move
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>WASD</b>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="control-table"> <b>Right-click</b> </td>
-                            <td class="control-table"> Kill human(monster), <br /> Kill monster(Only when sword is picked up) </td>
+                            <td class="control-action-container">
+                                <div class="control-action">
+                                    Turn around
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>Mouse</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="control-action">
+                                    Interact with object
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>E</b>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="control-action">
+                                    Force blink
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>Q</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="control-action">
+                                    Kill monster <br />
+                                    (Only when sword is equiped)
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>Left-click</b>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <table class="control-table">
+                        <tr>
+                            <td class="control-header" colspan="2">
+                                <h4>Monster</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="control-action-container">
+                                <div class="control-action">
+                                    Move
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>WASD</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="control-action-container">
+                                <div class="control-action">
+                                    Turn around
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>Mouse</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="control-action">
+                                    Interact with object
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>E</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="control-action">
+                                    Kill human
+                                </div>
+                            </td>
+                            <td>
+                                <div class="control-keys">
+                                    <b>Left-click</b>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </div>
