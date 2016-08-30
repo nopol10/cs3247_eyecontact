@@ -8,6 +8,8 @@ public class EyeContactTarget : TargetRules
 	public EyeContactTarget(TargetInfo Target)
 	{
 		Type = TargetType.Game;
+		UEBuildConfiguration.bCompileSteamOSS = true;
+        bUsesSteam = true;
 	}
 
 	//
