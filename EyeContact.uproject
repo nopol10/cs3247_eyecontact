@@ -13,6 +13,16 @@
 			]
 		}
 	],
+	"Plugins": [
+		{
+			"Name": "SteamVR",
+			"Enabled": false
+		},
+		{
+			"Name": "GearVR",
+			"Enabled": false
+		}
+	],
 	"TargetPlatforms": [
 		"WindowsNoEditor"
 	]
