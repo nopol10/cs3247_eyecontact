@@ -6,7 +6,7 @@ public class EyeContact : ModuleRules
 {
 	public EyeContact(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "OnlineSubsystemNull" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "OnlineSubsystemNull", "OnlineSubsystemUtils" });
 
         //DynamicallyLoadedModuleNames.Add("OnlineSubsystemNull");
 
@@ -16,13 +16,13 @@ public class EyeContact : ModuleRules
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
 		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-		// if ((Target.Platform == UnrealTargetPlatform.Win32) || (Target.Platform == UnrealTargetPlatform.Win64))
-		// {
-		//		if (UEBuildConfiguration.bCompileSteamOSS == true)
-		//		{
-		//			DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
-		//		}
-		// }
+		PrivateDependencyModuleNames.Add("OnlineSubsystem");
+		if ((Target.Platform == UnrealTargetPlatform.Win32) || (Target.Platform == UnrealTargetPlatform.Win64) || (Target.Platform == UnrealTargetPlatform.Linux))
+		{
+			if (UEBuildConfiguration.bCompileSteamOSS == true)
+			{
+				DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
+			}
+		}
 	}
 }
